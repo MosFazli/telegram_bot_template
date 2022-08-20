@@ -59,15 +59,23 @@ and save file
 now go back to Web tab from top bar, in the Code section, click on WSGI configuration file to go for config Bot
 ![image](https://user-images.githubusercontent.com/69136464/185756870-a3ae969d-70f3-4b43-a612-dff85e676f8d.png)
 just change flask_app variable to main, save file and come back to Web tab:
-![image](https://user-images.githubusercontent.com/69136464/185756981-139770ba-876b-45ff-a297-298e8bc37276.png)
+![image](https://user-images.githubusercontent.com/69136464/185757915-fc36efa3-aa30-4b56-a5c2-32b7022627ec.png)
+
+in the Web , go security section and Enable Force HTTPS:
 ![image](https://user-images.githubusercontent.com/69136464/185757727-660f13a0-c88e-414d-8019-571c60498d64.png)
+and click on Reload button for reload web app and submit settings
+![image](https://user-images.githubusercontent.com/69136464/185758139-e99e0258-659f-4594-95c2-41e9144f705b.png)
+
+for test that you app is run correctly, open your web app, you should see status code 200 like this:
+![image](https://user-images.githubusercontent.com/69136464/185758339-286de0c3-3daf-46b0-b4e2-276f0a167ba6.png)
 
 
-almost done, you should just set webhook.
+
+# almost done, for the last part you should just set webhook.
 in set webhook, you tell telegram that this bot following this url, or web app
 Format of URL like this:
 https://api.telegram.org/bot{my_bot_token}/setWebhook?url={url_to_send_updates_to}
 you should change {my_bot_token} to your token and {url_to_send_updates_to} to your web app in pythonanywhere
 for example, your token is 5494036016:AAFo3IOj2K7QTqq_n7hy5S5V4aDKM2wS7P0 and your web app is http://mostafafazli.pythonanywhere.com
 the url is:
-https://api.telegram.org/bot5494036016:AAFo3IOj2K7QTqq_n7hy5S5V4aDKM2wS7P0/setWebhook?url=http://mostafafazli.pythonanywhere.com
+https://api.telegram.org/bot5494036016:AAFo3IOj2K7QTqq_n7hy5S5V4aDKM2wS7P0/setWebhook?url=https://mostafafazli.pythonanywhere.com
