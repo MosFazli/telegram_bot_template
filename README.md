@@ -34,4 +34,40 @@ and select a version of Python, for example I using lastest version in here, Ver
 in the next step, Enter Path of your File, This is optional, but i suggest enter Good name
 ![image](https://user-images.githubusercontent.com/69136464/185738379-9e1f3c9b-8a68-4613-b485-c25ec5c22936.png)
 
+after you created web app, you should see a page like this
+![image](https://user-images.githubusercontent.com/69136464/185756421-99854fbc-c833-4c7c-a613-6517a8d08c34.png)
+this is web app settings and you should configure your app from this page in future
 
+now you go to Files tab from top menu
+![image](https://user-images.githubusercontent.com/69136464/185756481-a9ae0c7a-e21d-4f5c-915b-8708f9baa1cb.png)
+
+and go to your Flask web application folder and delete flask_app.py and in new page that opened, it's named Are you sure?, click OK
+![image](https://user-images.githubusercontent.com/69136464/185756578-4a803f32-3f02-4cdf-a1ac-80efe9f268d3.png)
+
+now from Upload a file button, upload main.py that you downloaded from Github
+![image](https://user-images.githubusercontent.com/69136464/185756638-d2c748c3-890e-4d5b-9600-0934ff3be2eb.png)
+![image](https://user-images.githubusercontent.com/69136464/185756672-26f51e9b-a1cf-4ce4-a499-466c92027838.png)
+and wait a little to upload, and done, you should see directory like this:
+![image](https://user-images.githubusercontent.com/69136464/185756701-cdf233f9-233e-424c-b80d-e18fd54ce24b.png)
+
+now set change main.py file with click on that and change your bot Token to YOUR_BOT_TOKEN variable
+![image](https://user-images.githubusercontent.com/69136464/185757180-31f6bdc8-aecf-4aad-b6d3-3714f393a152.png)
+should be like this:
+![image](https://user-images.githubusercontent.com/69136464/185757211-1eac1fdd-03da-47c8-9215-cd2e8cb195d2.png)
+and save file
+
+now go back to Web tab from top bar, in the Code section, click on WSGI configuration file to go for config Bot
+![image](https://user-images.githubusercontent.com/69136464/185756870-a3ae969d-70f3-4b43-a612-dff85e676f8d.png)
+just change flask_app variable to main, save file and come back to Web tab:
+![image](https://user-images.githubusercontent.com/69136464/185756981-139770ba-876b-45ff-a297-298e8bc37276.png)
+![image](https://user-images.githubusercontent.com/69136464/185757727-660f13a0-c88e-414d-8019-571c60498d64.png)
+
+
+almost done, you should just set webhook.
+in set webhook, you tell telegram that this bot following this url, or web app
+Format of URL like this:
+https://api.telegram.org/bot{my_bot_token}/setWebhook?url={url_to_send_updates_to}
+you should change {my_bot_token} to your token and {url_to_send_updates_to} to your web app in pythonanywhere
+for example, your token is 5494036016:AAFo3IOj2K7QTqq_n7hy5S5V4aDKM2wS7P0 and your web app is http://mostafafazli.pythonanywhere.com
+the url is:
+https://api.telegram.org/bot5494036016:AAFo3IOj2K7QTqq_n7hy5S5V4aDKM2wS7P0/setWebhook?url=http://mostafafazli.pythonanywhere.com
