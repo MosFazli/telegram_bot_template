@@ -79,3 +79,12 @@ you should change {my_bot_token} to your token and {url_to_send_updates_to} to y
 for example, your token is 5494036016:AAFo3IOj2K7QTqq_n7hy5S5V4aDKM2wS7P0 and your web app is http://mostafafazli.pythonanywhere.com
 the url is:
 https://api.telegram.org/bot5494036016:AAFo3IOj2K7QTqq_n7hy5S5V4aDKM2wS7P0/setWebhook?url=https://mostafafazli.pythonanywhere.com
+open your url by your format and setting and you should sett Webhook is set or after some times, you should see like this:
+![image](https://user-images.githubusercontent.com/69136464/185758425-09270811-2578-4304-a971-1c11010302b8.png)
+
+That's it,
+now your bot is running in server and you can work with that:
+![image](https://user-images.githubusercontent.com/69136464/185758497-ff5a01b5-c1a0-4a2e-8525-b210068e42c2.png)
+
+# If you found this article helpful, please give it a star.
+Thanks - Mostafa Fazli
